@@ -1,0 +1,25 @@
+{
+  "name": "drive-notion-db-synchronizer",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "prettier": {
+    "singleQuote": true
+  },
+  "dependencies": {
+    "@notionhq/client": "^0.4.13",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "googleapis": "^95.0.0"
+  },
+  "devDependencies": {
+    "prettier": "^2.5.1"
+  }
+}
