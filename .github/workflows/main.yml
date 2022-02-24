@@ -33,4 +33,11 @@ jobs:
         run: pnpm install
 
       - name: Run script
+        env:
+          CLIENT_ID: ${{ secrets.CLIENT_ID }}
+          SECRET_CLIENT_KEY: ${{ secrets.SECRET_CLIENT_KEY }}
+          REFRESH_TOKEN: ${{ secrets.REFRESH_TOKEN }}
+          FOLDER_ID: ${{ secrets.FOLDER_ID }}
+          NOTION_API_KEY: ${{ secrets.NOTION_API_KEY }}
+          NOTION_DATABASE_ID: ${{ secrets.NOTION_DATABASE_ID }}
         run: node index.js
